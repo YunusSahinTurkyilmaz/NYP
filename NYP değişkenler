@@ -1,0 +1,29 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("lutfen 1. sayiyi giriniz: ");
+        string gelensayi1 = Console.ReadLine();
+        double sayi1 = Convert.ToDouble(gelensayi1);
+
+        Console.WriteLine("lutfen 2. sayiyi giriniz: ");
+        string gelensayi2 = Console.ReadLine();
+        double sayi2 = Convert.ToDouble(gelensayi2);
+
+
+        if (sayi1 % sayi2 == 0)
+        {
+            Console.WriteLine("secitiginiz sayilar birbirine tam bölünüyor");
+            double kalan = sayi1 % sayi2;
+            double sonuc = sayi1 / sayi2;
+            Console.WriteLine("kalan: " + kalan);
+            Console.WriteLine("sonuc: " + sonuc);
+        }
+        else
+        {
+            Console.WriteLine("sayilariniz birbirine tam bolunmemekte: sad");
+        }
+    }
+}
