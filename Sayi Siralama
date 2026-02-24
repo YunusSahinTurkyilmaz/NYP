@@ -1,0 +1,48 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("1.Siralama sayisini giriniz:");
+        string sıralama1 = Console.ReadLine();
+        var sayi1 = Convert.ToDouble(sıralama1);
+
+        Console.WriteLine("2.Siralama sayisini giriniz:");
+        string sarılama2 = Console.ReadLine();
+        var sayi2 = Convert.ToDouble(sarılama2);
+        
+        Console.WriteLine("1.Siralama sayisini giriniz:");
+        string sıralama3 = Console.ReadLine();
+        var sayi3 = Convert.ToDouble(sıralama3);
+    
+        if (sayi1>sayi2)
+        {
+            if(sayi2>sayi3){
+            Console.WriteLine($"sayilariniz sirasiyla 1.sayi{sayi1} 2.sayi{sayi2} 3.sayi{sayi3}");
+            }
+            else{
+            Console.WriteLine($"sayilariniz sirasiyla 1.sayi{sayi1} 2.sayi{sayi3} 3.sayi{sayi2}");
+            }
+        }
+        else if (sayi2>sayi1)
+        {
+            if (sayi1>sayi3){
+            Console.WriteLine($"sayilariniz sirasiyla 1.sayi{sayi2} 2.sayi{sayi1} 3.sayi{sayi3}");  
+            }
+            else {
+            Console.WriteLine($"sayilariniz sirasiyla 1.sayi{sayi2} 2.sayi{sayi3} 3.sayi{sayi1}");    
+            }
+        }
+        else{ 
+            if(sayi1>sayi2){
+                Console.WriteLine($"sayilariniz sirasiyla 1.sayi{sayi3} 2.sayi{sayi1} 3.sayi{sayi2}");
+            }
+            else{
+                Console.WriteLine($"sayilariniz sirasiyla 1.sayi{sayi3} 2.sayi{sayi2} 3.sayi{sayi1}");
+            }
+            
+            
+        }
+    }
+}
