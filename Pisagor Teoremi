@@ -1,0 +1,26 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("1. kenari giriniz");
+        string kenar1 = Console.ReadLine();
+        double Kenar1 = Convert.ToDouble(kenar1);
+        
+        Kenar1 = Kenar1*Kenar1;
+        
+        Console.WriteLine("2. kenari giriniz");
+        string kenar2 = Console.ReadLine();
+        double Kenar2 = Convert.ToDouble(kenar2);
+        
+        Kenar2 = Kenar2*Kenar2;
+        
+        double pisagor;
+        
+        pisagor = Math.Sqrt(Kenar1 + Kenar2);
+       
+        Console.WriteLine("pisagor teoremi sonucu:"+pisagor);
+        
+    }
+}
