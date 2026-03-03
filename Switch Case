@@ -4,18 +4,34 @@ public class HelloWorld
 {
     public static void Main(string[] args)
     {
-     Console.WriteLine("hangi silahi kusanmak istiyorsun: ");
-     int silah = Convert.ToInt32(Console.ReadLine());
-     switch (silah){
+     Console.WriteLine("Hangi gündesiniz 1-7");
+     int zaman = Convert.ToInt32(Console.ReadLine());
+     
+     switch (zaman)
+     {
          case 1:
-         Console.WriteLine("ilk silahi kusandiniz");
+         Console.WriteLine("pazartesi gunundesiniz.");
          break;
          case 2:
-         Console.WriteLine("2. silahi kusandiniz");
+         Console.WriteLine("salı gunundesiniz.");
          break;
          case 3:
-         Console.WriteLine("3. silahi kusandiniz");
+         Console.WriteLine("carsamba gunundesiniz.");
          break;
-     }     
+         case 4:
+         Console.WriteLine("persembe gunundesiniz.");
+         break;
+          case 5:
+         Console.WriteLine("cuma gunundesiniz.");
+         break;
+          case 6:
+         Console.WriteLine("cumartesi gunundesiniz.");
+         break;
+          case 7:
+         Console.WriteLine("pazar gunundesiniz.");
+         break;
+         default: Console.WriteLine("hatali bir gun girdiniz:");
+         break;
+     }    
     }
 }
