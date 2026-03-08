@@ -1,0 +1,20 @@
+using System;
+
+public class HelloWorld 
+// 5 e gelince cıkma kodu
+{
+    public static void Main(string[] args)
+    {
+       int Sayac = 0;
+       
+       isinlanmayerim:
+       Sayac++;
+      
+       if(Sayac<=3){
+           Console.WriteLine(Sayac);
+           goto isinlanmayerim;
+       }else {
+           Console.WriteLine(" ve buraya gelicek ve dongu bitcek");
+       }
+    }
+}
