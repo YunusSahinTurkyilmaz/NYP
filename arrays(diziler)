@@ -1,0 +1,16 @@
+using System;
+
+public class HelloWorld 
+{
+    public static void Main(string[] args)
+    {
+     int[] sayilar = new int[5];
+     int toplam = 0;
+     for(int i = 0;i<=4;i++){
+         Console.WriteLine($"dizi {i} sayisini giriniz");
+         sayilar[i] = Convert.ToInt32(Console.ReadLine());
+         toplam = toplam + sayilar[i];
+     }
+     Console.WriteLine("sayilarin toplamlari:"+ toplam);
+    }
+}
