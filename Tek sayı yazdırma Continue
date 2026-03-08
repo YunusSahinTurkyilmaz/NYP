@@ -1,0 +1,16 @@
+using System;
+
+public class HelloWorld 
+// 5 e gelince cıkma kodu
+{
+    public static void Main(string[] args)
+    {
+        for(int i= 1; i<=10;i++){
+           if(i%2 != 0){
+               Console.WriteLine(i);
+           }else{
+               continue;
+           }
+        }
+    }
+}
