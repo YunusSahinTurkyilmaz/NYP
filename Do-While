@@ -1,0 +1,23 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        string devam;
+        do {
+            Console.WriteLine("Bir sayi giriniz");
+            int sayi = Convert.ToInt32(Console.ReadLine());
+                if (sayi > 10){
+                    Console.WriteLine($"{sayi}:sayiniz 10 dan buyuk");
+                } else if (sayi == 10){
+                    Console.WriteLine($"{sayi}:sayiniz 10 a esittir");
+                } else {
+                    Console.WriteLine($"{sayi}:sayiniz 10 dan kucuk");
+                }
+                Console.WriteLine("devam etmek istermisiniz ? evet/hayır");
+                devam = Console.ReadLine();
+        }while(devam != "hayır");
+        Console.WriteLine("gorusmek uzeree :)");
+    }
+}
