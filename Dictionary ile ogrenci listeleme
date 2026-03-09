@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Dictionary<int,string> ogrenciler = new Dictionary<int, string>();
+        ogrenciler.Add(113,"Yunus");
+        ogrenciler.Add(293,"Sahin");
+        ogrenciler.Add(6,"kimse");
+        
+        foreach(var bilgiler in ogrenciler){
+            Console.WriteLine($"{bilgiler.Value} isimli ogrencinin okul numarası: {bilgiler.Key}");
+        }
+    }
+}
