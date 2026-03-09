@@ -1,0 +1,15 @@
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static void ikikati(ref double artanSayi){
+        artanSayi = artanSayi*2;
+    }
+    public static void Main(string[] args){
+        Console.WriteLine("bir sayi giriniz");
+        double Y = Convert.ToDouble(Console.ReadLine());
+        ikikati(ref Y);
+        Console.WriteLine("girdiginiz sayinin karesi: "+Y);
+    }
+}
