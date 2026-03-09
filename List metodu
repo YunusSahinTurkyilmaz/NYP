@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("listeye eklemek istediginiz sayiyi giriniz: ");
+        Console.WriteLine("0 girmek islemi bitirir:");
+        int gelenSayi = Convert.ToInt32(Console.ReadLine());
+        List<int> sayilar = new List<int>();
+        int enbuyuk=0;
+        while(gelenSayi != 0){
+            sayilar.Add(gelenSayi);
+                if(enbuyuk<gelenSayi){
+                    enbuyuk=gelenSayi;
+                } 
+                Console.WriteLine("bir diger sayiyi giriniz:");
+                gelenSayi = Convert.ToInt32(Console.ReadLine());
+        }
+        Console.WriteLine("girmis oldugunuz en buyuk sayi: "+gelenSayi);
+    }
+}
