@@ -12,6 +12,8 @@ public class HelloWorld
             hamsiler[i,a]=Convert.ToInt32(Console.ReadLine());
             toplam=toplam+hamsiler[i,a];
             }
+            int ortalama = toplam/3;
+            Console.WriteLine("Tum ogrencilerin toplami: "+ toplam);
         }    
     }
 }
