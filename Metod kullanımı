@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static double ortalamaHesap(double ilk, double ikinci){
+        double islem = (ilk+ikinci)/2;
+        return islem;
+    }
+    public static void Main(string[] args)
+    {
+     Console.WriteLine("1. sayiyi giriniz:");
+     double sayi = Convert.ToDouble(Console.ReadLine());
+     
+     Console.WriteLine("2. sayiyi giriniz:");
+     double sayi1 = Convert.ToDouble(Console.ReadLine());
+    
+    double ortalam = ortalamaHesap(sayi,sayi1);
+    Console.WriteLine("sayilarinizin ortalaması: "+ortalam);
+    }
+}
