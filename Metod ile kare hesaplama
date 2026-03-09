@@ -1,0 +1,16 @@
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static double kareHesap(double sayi){
+        double islem = (sayi*sayi);
+        return islem;
+    }
+    public static void Main(string[] args){
+        Console.WriteLine("bir sayi giriniz");
+        double a = Convert.ToDouble(Console.ReadLine());
+        double kare = kareHesap(a);
+        Console.WriteLine("girdiginiz sayinin karesi: "+kare);
+    }
+}
