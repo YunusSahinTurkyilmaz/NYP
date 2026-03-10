@@ -1,0 +1,18 @@
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static int faktoriyel(int islem){
+        if(islem == 1){
+            return 1;
+        }
+        return islem = islem *faktoriyel(islem-1);
+    }
+    public static void Main(string[] args){
+    Console.WriteLine("bir sayi giriniz: ");
+    int sayi = Convert.ToInt32(Console.ReadLine());
+    int sonuc = faktoriyel(sayi);
+    Console.WriteLine("hamsi:"+sonuc);
+    }
+}
