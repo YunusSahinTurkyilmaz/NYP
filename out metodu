@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+
+public class HelloWorld
+{
+    public static void dikdortgen(int uzun,int kısa,out int alan,out int cevre){
+        cevre = (uzun + kısa)*2;
+        alan = uzun * kısa;
+      
+    }
+    public static void Main(string[] args){
+        Console.WriteLine("uzun kenarı giriniz:");
+        int a = Convert.ToInt32(Console.ReadLine());
+        
+        Console.WriteLine("kisa kenarı giriniz:");
+        int b = Convert.ToInt32(Console.ReadLine());
+        
+        int gecicicevre;
+        int gecicialan;
+        dikdortgen(a,b,out gecicialan,out gecicicevre);
+        Console.WriteLine("dikdortgenin alanı:"+gecicialan);
+        Console.WriteLine("dikdortgenin cevresi: "+gecicicevre);
+    }
+}
