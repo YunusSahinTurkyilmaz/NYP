@@ -1,0 +1,125 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace ders
+
+{
+
+    public class araclar
+
+    {
+
+        private string markası;
+
+        public string Markası
+
+        {
+
+            get { return markası; }
+
+            set
+
+            {
+
+                markası = value;
+
+            }
+
+        }
+
+        private string modeli;
+
+        public string Modeli
+
+        {
+
+            get { return modeli; }
+
+            set { modeli = value; }
+
+        }
+
+        private int yil;
+
+        public int Yil
+
+        {
+
+            get { return yil; }
+
+            set { yil = value; }
+
+        }
+
+
+
+    }
+
+    public class araba : araclar
+
+    {
+
+        public void sahiplik()
+
+        {
+
+            Console.WriteLine("araba sahibi yunus");
+
+
+
+        }
+
+    }
+
+    public class uçak : araclar
+
+    {
+
+        public void sahiplik()
+
+        {
+
+            Console.WriteLine("bununda sahibi benim");
+
+        }
+
+
+
+    }
+
+    internal class Program
+
+    {
+        static void Main(string[] args) 
+        {
+            Console.WriteLine("Harika yunusun diyarına hosgeldiniz :");
+            araba bmw = new araba();
+            bmw.sahiplik();
+            Console.WriteLine("arabanın markasını giriniz");
+            bmw.Markası = Console.ReadLine();
+            Console.WriteLine("arabanız " + bmw.Markası);
+            Console.WriteLine("arabanın modelini giriniz");
+            bmw.Modeli = Console.ReadLine();
+            Console.WriteLine("arabanız " + bmw.Modeli);
+            Console.WriteLine("arabanın yılını giriniz");
+            bmw.Yil = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("arabanız "+bmw.Yil);
+
+            uçak kağan = new uçak();
+            kağan.sahiplik();
+            Console.WriteLine("uçağın markasını giriniz");
+            kağan.Markası = Console.ReadLine();
+            Console.WriteLine("uçağın " + kağan.Markası);
+            Console.WriteLine("uçağın modelini giriniz");
+            kağan.Modeli = Console.ReadLine();
+            Console.WriteLine("uçağın " + kağan.Modeli);
+            Console.WriteLine("uçağın yılını giriniz");
+            kağan.Yil = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("uçağın " + kağan.Yil);
+        }
+        
+    }
+
+}
